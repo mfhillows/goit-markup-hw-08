@@ -1,0 +1,79 @@
+/* Common properties */
+
+header {
+  background-color: $colorWhite;
+}
+
+body {
+  font-family: $fontRoboto;
+  letter-spacing: 0.03em;
+  background-color: $colorWhite;
+  color: $colorPrimeText;
+}
+
+footer {
+  background-color: $colorFooter;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links,
+.logo {
+  text-decoration: none;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.smalltitle {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}

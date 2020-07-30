@@ -1,0 +1,36 @@
+/* Filter-buttons */
+
+.container-filter {
+  padding-top: 93px;
+}
+
+.filter-list {
+@extend %social-flex;
+  justify-content: center;
+}
+
+.button-item {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.button-filter {
+  padding: 6px 22px;
+  @include Fonts(500, 16px, 1.62);
+
+  cursor: pointer;
+
+  background-color: $colorThirdBody;
+  border: transparent;
+  border-radius: 4px;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $colorWhite;
+    background-color: $colorAccent;
+  }
+}

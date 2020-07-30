@@ -1,0 +1,27 @@
+.social-items {
+  @extend %social-flex;
+  justify-content: space-around;
+
+  padding: 16px 32px 24px 32px;
+
+.item {
+    margin-right: 10px;
+  }
+
+.item:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-link-item {
+  @extend %social-size;
+  background-color: $colorWhite;
+  fill: $colorItems;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $colorAccent;
+    fill: $colorWhite;
+  }
+}

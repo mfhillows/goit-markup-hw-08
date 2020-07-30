@@ -1,0 +1,13 @@
+.logo {
+  font-family: $fontRaleway;
+  @include Fonts(700, 26px, 1.2);
+  color: $colorLogoBlack;
+
+  &-blue {
+    color: $colorBlue;
+  }
+
+  &.inverse {
+    color: $colorWhite;
+  }
+}

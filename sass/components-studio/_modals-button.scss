@@ -1,0 +1,42 @@
+/* Modal`s button */
+
+.button-send-modal {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 10px 55px;
+  min-width: 200px;
+  margin-bottom: 40px;
+
+  @include Fonts(700, 16px, 1.88);
+  letter-spacing: 0.06em;
+
+  background-color: $colorBlue;
+  color: $colorWhite;
+
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+
+  background-color: $colorWhite;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &:hover .icon-close {
+    fill: $colorAccent;
+
+    cursor: pointer;
+  }
+}
+
+.icon-close {
+  fill: #000000;
+}

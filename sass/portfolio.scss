@@ -1,0 +1,21 @@
+@import "./utils/varibles";
+@import "./utils/mixin";
+@import "./utils/placeholders";
+@import "./base/common";
+
+@import "./components-studio/header-page";
+@import "./components-studio/logo-header";
+@import "./components-studio/site-navigation";
+@import "./components-studio/header-contacts";
+
+@import "./components-portfolio/filter-buttons";
+
+@import "./components-portfolio/card-portfolio";
+@import "./components-portfolio/slide-text";
+
+@import "./components-studio/footer";
+@import "./components-studio/footer-contacts";
+@import "./components-studio/social-items-footer";
+@import "./components-studio/form-footer";
+@import "./components-studio/button-footer";
+@import "./components-studio/copypast";

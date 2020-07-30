@@ -1,0 +1,26 @@
+.image-text {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-inside {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  margin: 0;
+  padding: 63px 24px;
+  @include Fonts(400, 18px, 1.56);
+
+  color: $colorWhite;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+  transform: translateY(100%);
+  transition: $transition;
+
+  .link-card:hover & {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

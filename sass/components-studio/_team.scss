@@ -1,0 +1,49 @@
+.team {
+  background-color: $colorThirdBody;
+
+  &-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > .item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    margin-bottom: 0;
+
+    background-color: $colorWhite;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14),
+      0 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0 0 4px 4px;
+  }
+
+  & > .item:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.our-force {
+  color: $colorSecondText;
+}
+
+.names {
+  margin-top: 30px;
+
+  @include Fonts(500, 16px, 1.18);
+  text-align: center;
+}
+
+.position {
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  @include Fonts(400, 16px, 1.18);
+  text-align: center;
+
+  color: $colorSecondText;
+}

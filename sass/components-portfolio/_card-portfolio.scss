@@ -1,0 +1,61 @@
+.container-cards {
+  padding-top: 50px;
+  padding-bottom: 94px;
+  background-color: $colorCopypast;
+}
+
+.list-cards {
+  @extend %social-flex;
+}
+
+.card {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+.link-card {
+  display: block;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.06),
+      0 1px 1px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.card-content {
+  padding: 20px 24px;
+
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
+  background: $colorWhite;
+}
+
+.card-title {
+  margin: 0;
+  padding: 0;
+
+  @include Fonts(700, 18px, 2);
+  letter-spacing: 0.06em;
+  color: $colorPrimeText;
+}
+
+.card-description {
+  margin: 0;
+  padding-top: 4px;
+
+  @include Fonts(400, 16px, 1.87);
+  color: $colorSecondText;
+}

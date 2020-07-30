@@ -1,0 +1,36 @@
+.advantage {
+  margin-bottom: 94px;
+
+  &-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &-fone {
+    padding: 25px 100px;
+    background-color: $colorThirdBody;
+  }
+
+  .smalltitle {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    @include Fonts(700, 14px, 1.14);
+
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+  }
+
+  .item:nth-child(4n) {
+    margin-right: 0;
+  }
+}

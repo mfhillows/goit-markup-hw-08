@@ -1,0 +1,35 @@
+@import "./utils/varibles";
+@import "./utils/mixin";
+@import "./utils/placeholders";
+@import "./base/common";
+
+@import "./components-studio/header-page";
+@import "./components-studio/logo-header";
+@import "./components-studio/site-navigation";
+@import "./components-studio/header-contacts";
+
+@import "./components-studio/hero";
+@import "./components-studio/hero-overlay";
+@import "./components-studio/hero-button";
+
+@import "./components-studio/advantages";
+
+@import "./components-studio/competence";
+
+@import "./components-studio/team";
+@import "./components-studio/social-items";
+
+@import "./components-studio/customers";
+
+@import "./components-studio/footer";
+@import "./components-studio/footer-contacts";
+@import "./components-studio/social-items-footer";
+@import "./components-studio/form-footer";
+@import "./components-studio/button-footer";
+@import "./components-studio/copypast";
+
+@import "./components-studio/modal-window";
+
+@import "./components-studio/forms-modal";
+@import "./components-studio/checkbox";
+@import "./components-studio/modals-button";

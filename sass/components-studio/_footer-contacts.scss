@@ -1,0 +1,11 @@
+.footer-contacts {
+  margin-top: 9px;
+
+  color: $colorCopypast;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $colorAccent;
+  }
+}

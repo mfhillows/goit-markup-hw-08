@@ -1,0 +1,22 @@
+.button-hero {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  @include Fonts(700, 16px, 1.88);
+  letter-spacing: 0.06em;
+
+  background-color: $colorBlue;
+  color: $colorWhite;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    background-color: $colorWhite;
+    color: $colorAccent;
+  }
+
+  cursor: pointer;
+}

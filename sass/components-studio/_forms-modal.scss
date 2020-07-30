@@ -1,0 +1,90 @@
+/* Forms */
+
+.form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.modal-title {
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+  @include Fonts(700, 20px, 1.15);
+  text-align: center;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+
+  @include Fonts(400, 14px, 1.14);
+  letter-spacing: 0.01em;
+
+  color: $colorSecondText;
+  transition: transform $transition;
+}
+
+.form-input {
+  width: 100%;
+  margin: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &:focus + .form-label,
+  &:not(:placeholder-shown) + .form-label {
+    transform: translateY(-40px) translateX(-40px);
+    color: $colorAccent;
+  }
+
+  &:focus {
+    border-color: $colorAccent;
+    fill: $colorAccent;
+    outline: none;
+  }
+
+&:focus ~ .icon-form {
+  fill: $colorAccent;
+}
+
+&:focus {
+  border-color: $colorAccent;
+  fill: $colorAccent;
+}
+}
+
+.icon-form {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: transform $transition;
+}
+
+.comment {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.textarea-modal textarea::placeholder {
+  @include Fonts(400, 14px, 1.14);
+  letter-spacing: 0.01em;
+  color: $colorSecondText;
+}
