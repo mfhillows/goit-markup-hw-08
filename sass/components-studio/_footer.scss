@@ -1,18 +1,97 @@
 .footer {
-  padding-top: 60px;
-  @extend %social-flex;
-  align-items: baseline;
-  justify-content: space-between;
+  // margin-top: 60px;
+  // @extend %social-flex;
+  // align-items: baseline;
+  // justify-content: space-between;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .address-footer {
-  margin-right: 69px;
+  // margin-right: 69px;
 }
 
-
 .city-adress {
-  margin-top: 20px;
+  // margin-top: 20px;
   color: $colorWhite;
+}
+
+.footer-contacts {
+  // margin-top: 9px;
+
+  color: $colorCopypast;
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    color: $colorAccent;
+  }
+}
+
+// Mobile
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  .address-footer {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .address-list {
+    margin-top: 20px;
+
+    .item-adress {
+      margin-top: 8px;
+    }
+  }
+
+  .social-contacts {
+    margin-top: 60px;
+  }
+
+  .sign-in {
+    padding: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+// Tablet
+
+@media screen and (min-width: $tablet) {
+  .footer {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  .address-list {
+    margin-top: 20px;
+  }
+
+  .item-adress {
+    margin-top: 8px;
+  }
+
+  .sign-in {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+}
+// Descktop
+
+@media screen and (min-width: $descktop) {
+  .footer {
+    padding-bottom: 60px;
+  }
+  .sign-in {
+    margin-bottom: 0;
+  }
 }

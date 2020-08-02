@@ -1,19 +1,19 @@
-.post-call {
-  display: flex;
-  margin-left: auto;
+// .post-call {
+//   display: flex;
+//   margin-left: auto;
 
-  .item {
-    margin-left: 30px;
-    display: inline-flex;
-  }
+//   .item {
+//     margin-left: 30px;
+//     display: inline-flex;
+//   }
 
-  .item:nth-child(1) {
-    margin-left: 0;
-  }
+//   .item:nth-child(1) {
+//     margin-left: 0;
+//   }
 
   .links {
-    display: inline-flex;
-    align-items: center;
+    // display: inline-flex;
+    // align-items: center;
 
     @include Fonts(500, 14px, 1.14);
     letter-spacing: 0.02em;
@@ -21,16 +21,35 @@
     color: $colorSecondText;
     fill: $colorSecondText;
     transition: $transition;
-  }
 
-  .links:hover,
-  .links:focus {
+
+&:hover,
+&:focus {
     color: $colorAccent;
     fill: $colorAccent;
   }
 }
 
-.icon-phone,
-.icon-mail {
-  margin-right: 10px;
+// .icon-phone,
+// .icon-mail {
+//   margin-right: 10px;
+// }
+
+
+// Mobile
+
+@media screen and (max-width: 767px) {
+
+}
+
+// Tablet
+
+@media screen and (min-width: $tablet) {
+
+}
+
+// Descktop
+
+@media screen and (min-width: $descktop) {
+
 }

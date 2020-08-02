@@ -59,3 +59,22 @@
   @include Fonts(400, 16px, 1.87);
   color: $colorSecondText;
 }
+
+
+// Mobile
+
+@media screen and (max-width: 767px) {
+
+}
+
+// Tablet
+
+@media screen and (min-width: $tablet) {
+
+}
+
+// Descktop
+
+@media screen and (min-width: $descktop) {
+
+}

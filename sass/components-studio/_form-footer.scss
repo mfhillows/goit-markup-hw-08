@@ -18,3 +18,43 @@
 
   color: rgba(255, 255, 255, 0.6);
 }
+
+// Mobile
+
+@media screen and (max-width: 767px) {
+  .mail-footer {
+    width: 100%;
+  }
+}
+
+// Tablet
+
+@media screen and (min-width: $tablet) {
+  .form-sending {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sign-in {
+    .smalltitle {
+      padding-bottom: 0;
+    }
+  }
+}
+
+// Descktop
+
+@media screen and (min-width: $descktop) {
+  .form-sending {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .sign-in {
+    .smalltitle {
+text-align: start;
+    }
+  }
+}

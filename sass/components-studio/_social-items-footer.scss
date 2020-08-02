@@ -1,15 +1,10 @@
 .social-links {
   @extend %social-flex;
-  justify-content: center;
-  padding-top: 20px;
+  //   justify-content: center;
+  //   padding-top: 20px;
 
-.item {
-    margin-right: 10px;
-  }
-
-.item:last-child {
-    margin-right: 0;
-  }
+  // .item:last-child {
+  //     margin-right: 0;
 }
 
 .social-link-footer {
@@ -31,4 +26,40 @@
   text-transform: uppercase;
 
   color: $colorWhite;
+}
+
+// Mobile
+
+@media screen and (max-width: 767px) {
+  .social-links {
+    justify-content: center;
+    padding-top: 20px;
+
+    .item:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// Tablet
+
+@media screen and (min-width: $tablet) {
+  .social-contacts {
+    text-align: center;
+  }
+
+  .social-links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 20px;
+    .item {
+      margin-right: 0;
+    }
+  }
+}
+
+// Descktop
+
+@media screen and (min-width: $descktop) {
 }

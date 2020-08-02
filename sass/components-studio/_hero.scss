@@ -14,3 +14,22 @@
 
   color: $colorWhite;
 }
+
+
+// Mobile
+
+@media screen and (max-width: 767px) {
+
+}
+
+// Tablet
+
+@media screen and (min-width: $tablet) {
+
+}
+
+// Descktop
+
+@media screen and (min-width: $descktop) {
+
+}

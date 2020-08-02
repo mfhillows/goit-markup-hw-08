@@ -1,30 +1,7 @@
+// Base
+
 .team {
   background-color: $colorThirdBody;
-
-  &-container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-
-  & > .item {
-    width: calc((100% - 90px) / 4);
-    margin-right: 30px;
-    margin-bottom: 0;
-
-    background-color: $colorWhite;
-    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14),
-      0 1px 3px rgba(0, 0, 0, 0.12);
-    border-radius: 0 0 4px 4px;
-  }
-
-  & > .item:nth-child(4n) {
-    margin-right: 0;
-  }
 }
 
 .our-force {
@@ -32,18 +9,72 @@
 }
 
 .names {
-  margin-top: 30px;
-
   @include Fonts(500, 16px, 1.18);
   text-align: center;
+  text-transform: none;
 }
 
 .position {
-  margin-top: 10px;
+  margin-top: 0;
   margin-bottom: 0;
 
   @include Fonts(400, 16px, 1.18);
   text-align: center;
 
   color: $colorSecondText;
+}
+
+.team-container {
+  padding-bottom: 30px;
+}
+
+.team-list {
+  .item {
+    margin-bottom: 30px;
+    background-color: $colorWhite;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14),
+      0 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+// Mobile
+
+// Tablet
+
+@media screen and (min-width: $tablet) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+
+  .item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+// Descktop
+
+@media screen and (min-width: $descktop) {
+  .team-container {
+    padding-bottom: 64px;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      width: calc((100% - 90px) / 4);
+      margin-right: 30px;
+    }
+
+    .item:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }

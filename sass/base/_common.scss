@@ -49,6 +49,18 @@ footer {
   letter-spacing: 0.03em;
 }
 
+// @media screen and (max-width: 1199px) {
+//   .section-title {
+//   padding-top: 60px;
+//   padding-bottom: 30px;
+//   }
+// }
+// @media screen and (max-width: 1200px) {
+//   .section-title {
+//   padding-top: 0;
+//   padding-bottom: 50px;
+//   }
+
 .smalltitle {
   margin-top: 0;
   margin-bottom: 0;
@@ -75,5 +87,39 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+}
+
+// Mobile
+
+@media screen and (min-width: $mobile) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-title {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
+// Tablet
+
+@media screen and (min-width: $tablet) {
+  .container {
+    width: 768px;
+  }
+  .section-title {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
+// Descktop
+
+@media screen and (min-width: $descktop) {
+  .container {
+    width: 1200px;
+  }
 }
